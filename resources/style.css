@@ -14,7 +14,7 @@
 }
 
 /*	For Animations */
-#headline, #sub-headline, #intro-p {
+#headline, #sub-headline, #intro-p, {
   	-webkit-animation-duration: 2s;
     -moz-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -22,6 +22,26 @@
   -moz-animation-delay: 1.5s;
   -o-animation-delay: 1.5s;
 }
+#portfolio-heading, .skillsLeft, .skillsRight, .contact,
+.radio-left, .gumbo-left, .alex-left, .zen-left, .tribune-left, .magazine-left, 
+.radio-right, .gumbo-right, .alex-right, .zen-right, .tribune-right, .magazine-right {
+  	-webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+}
+
+/*#idenity-heading, #response-heading, #html-heading, #jquery-heading, #ajax-heading, 
+#php-heading, #seo-heading, #documented-heading, #more-heading {
+  	-webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+}*/
 
 /*	Global */
 body {
@@ -122,6 +142,8 @@ h1, h2 {
 	/*display: inline-block;*/
 }
 .listItem h4 {
+}
+.emphasis-peekhole {
 	padding: 0.5em;
 	background-color: #888;
 	background: url('/resume/resources/images/nowhere.jpg') no-repeat center center fixed; 
@@ -171,8 +193,13 @@ h1, h2 {
 }
 
 /*	portfolio */
-.portfolio h3 {
+.portfolio-headbox {
 	margin-top: 1em;
+	background-color: #000;
+	color: #FFF;
+	padding: 0.5em;
+}
+.portfolio h3 {
 }
 .portfolio-item {
 	margin-top: 4em;
@@ -182,6 +209,9 @@ h1, h2 {
 	height: 200px;
 	width: 400px;
 	border-radius: 0.25em;
+}
+.portfolio-item h4 {
+	letter-spacing: 0.5em
 }
 
 /*	Contact */
