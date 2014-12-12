@@ -146,7 +146,7 @@ h1, h2 {
 .emphasis-peekhole {
 	padding: 0.5em;
 	background-color: #888;
-	background: url('/resume/resources/images/nowhere.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/nowhere.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -167,7 +167,7 @@ h1, h2 {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
 	background-color: #888;
-	background: url('/resume/resources/images/planets.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/planets.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -212,6 +212,9 @@ h1, h2 {
 }
 .portfolio-item h4 {
 	letter-spacing: 0.5em
+}
+.portfolio-item .col-md-7 p {
+	width: 71%;
 }
 
 /*	Contact */
