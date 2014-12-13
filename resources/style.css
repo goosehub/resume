@@ -15,9 +15,9 @@
 
 /*	For Animations */
 #headline, #sub-headline, #intro-p, {
-  	-webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
+  	-webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   -o-animation-delay: 1.5s;
@@ -71,7 +71,7 @@ h4 {
 }
 .divider {
   opacity: 0.2;
-  border: 0;
+  border: 0.2em;
   clear:both;
   display:block;
   width: 96%;               
@@ -113,22 +113,21 @@ h4 {
 	margin-top: -3vh;
 	height: 103vh;
 	background: url('../resources/images/top-background.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 	text-align: center;
 }
 h1 {
 	padding-top: 33vh;
 }
 h1, h2 {
-	letter-spacing: 0.3em;
-	word-spacing: 0.3em;
+	width: 91%;
+	letter-spacing: 0.2em;
+	word-spacing: 0.2em;
 }
 .intro p {
-	width: 33%;
-	margin-left: 33%;
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
 }
@@ -136,17 +135,12 @@ h1, h2 {
 /*	Emphasis */
 .listItem {
 	text-align: center;
-	/*width: 30%;*/
-	/*padding: 1.5%;*/
-	/*float: left;*/
-	/*display: inline-block;*/
 }
 .listItem h4 {
 }
 .emphasis-peekhole {
 	padding: 0.5em;
 	background-color: #888;
-	background: url('../resources/images/nowhere.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -156,6 +150,15 @@ h1, h2 {
 	font-weight: bold;
 	color: #FFF;
 	text-shadow: 0.05em 0.05em 0.05em #0000FF;
+}
+.emphasis-top {
+	background: url('../resources/images/em-01.jpg') no-repeat center center fixed; 
+}
+.emphasis-mid {
+	background: url('../resources/images/em-02.jpg') no-repeat center center fixed; 
+}
+.emphasis-btm {
+	background: url('../resources/images/em-03.jpg') no-repeat center center fixed; 
 }
 
 /*	skills */
@@ -167,7 +170,7 @@ h1, h2 {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
 	background-color: #888;
-	background: url('../resources/images/planets.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/colorado-01.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -198,8 +201,14 @@ h1, h2 {
 	background-color: #000;
 	color: #FFF;
 	padding: 0.5em;
+	background: url('../resources/images/Ceric2.gif') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .portfolio h3 {
+	text-shadow: 0.01em 0.01em 0.01em #0000FF;
 }
 .portfolio-item {
 	margin-top: 4em;
@@ -208,18 +217,28 @@ h1, h2 {
 .portfolioImg {
 	height: 200px;
 	width: 400px;
+	max-width: 100%;
 	border-radius: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
 }
 .portfolio-item h4 {
-	letter-spacing: 0.5em
+	letter-spacing: 0.2em;
+	word-spacing: 0.2em;
+	max-width: 91%;
 }
-.portfolio-item .col-md-7 p {
+.portfolio-item .col-sm-7 p {
 	width: 71%;
+	max-width: 91%;
+}
+.portfolio-item a {
+	font-size: 1.6em;
 }
 
 /*	Contact */
 #contact p {
 	text-align: center;
+	word-spacing: 0.1em;
 }
 #email, #skype, #phone {
 	text-align: center;

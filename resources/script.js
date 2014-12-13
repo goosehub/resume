@@ -1,12 +1,14 @@
-$(document).ready(function()
-{
 // Preloader
 	$(window).load(function(){ 
     $('#preloader').fadeOut(2000,function(){$(this).remove();});
 });
+
 	$('#headline').addClass('animated fadeInLeft');
 	$('#sub-headline').addClass('animated fadeInRight');
 	$('#intro-p').addClass('animated bounceIn');
+
+$(document).ready(function()
+{
 
 // portfolio timed event
 function isElementInViewport(elem) {
@@ -110,7 +112,28 @@ $(window).scroll(function(){
     // fadeInCheckAnimation('#seo-heading');
     // fadeInCheckAnimation('#documented-heading');
     // fadeInCheckAnimation('#more-heading');
-
 });
+
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	var divam = 1;
+	$(".intro").css({
+	  "background-position":"0px -"+scrollTop/divam+"px"     
+	});
+	  $(".intro").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+});
+
+// $(window).scroll(function() {
+// 	var scrollTop = $(window).scrollTop();
+// 	var divam = 0.5;
+// 	$(".portfolio-headbox").css({
+// 	  "background-position":"0px -"+scrollTop/divam+"px"     
+// 	});
+// 	  $(".portfolio-headbox").css({
+// 	     "margin-top":"-"+scrollTop+"px"
+// 	});
+// });
 
 }); //End Document

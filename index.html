@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="resources/tools/bootstrap.min.css" />
 	<link rel="stylesheet" href="resources/style.css" />
 	<link rel="stylesheet" href="resources/tools/animate.css" />
-    <!-- <link rel="shortcut icon" href="resources/favicon.ico"> -->
+    <link rel="shortcut icon" href="resources/images/favicon.ico">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -40,15 +40,22 @@
 <div class="page-wrapper">
 <section class="intro">
 <div class="contain" id="top">
-<header role="banner">
-	<h1 id="headline" class="animate">Cory Long</h1>
-	<h2 id="sub-headline" class="animate">Resume and Work Showcase</h2>
-</header>
+<div class="row">
+  <div class="col-sm-3">
+  </div>
+    <div class="col-sm-6">
+		<header role="banner">
+			<h1 id="headline" class="animate">Cory Long</h1>
+			<h2 id="sub-headline" class="animate">Resume and Work Showcase</h2>
+		</header>
 
 
 <!-- PARALAX SCROLL -->
-	
-	<p id="intro-p"class="animate">Hi, I'm a web designer and developer based in Jacksonville, Florida. I love to create engaging front end designs and dependable back end development. I'm passionate about what I do. Let me tell you about it.</p>
+
+		<p id="intro-p"class="animate">Hi, I'm a web designer and developer based in Jacksonville, Florida. I love to create engaging front end designs and dependable back end development. I'm passionate about what I do. Let me tell you about it.</p>
+		</div>
+	  <div class="col-sm-3"></div>
+	</div>
 </div>
 </section>
 
@@ -67,57 +74,57 @@
 <div class="row">
 <div class="col-sm-4">
 		<div class="listItem" id="identity">
-			<div class="emphasis-peekhole"><h4 id="idenity-heading">Identity</h4>
+			<div class="emphasis-peekhole emphasis-top"><h4 id="idenity-heading">Identity</h4>
 			</div>	<p>I keep focus on the content, and work with clients to craft a <strong>unique</strong> and <em>compelling</em> identity.</p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="response">
-			<div class="emphasis-peekhole"><h4 id="response-heading">Responsive Design</h4>
+			<div class="emphasis-peekhole emphasis-top"><h4 id="response-heading">Responsive Design</h4>
 			</div>	<p>I design websites that run across all devices, including <strong>phones</strong>,  <strong>tablets</strong>,  <strong>laptops</strong>, and <strong>televisions</strong>. </p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="html">
-			<div class="emphasis-peekhole"><h4 id="html-heading">Semantic HTML</h4>
+			<div class="emphasis-peekhole emphasis-top"><h4 id="html-heading">Semantic HTML</h4>
 			</div>	<p>I create all of my presentation in the CSS, and leave the structure intact, giving a more reliable experience and easier to maintain projects. <!-- I use Bootstrap/LESS/SASS as a framework and a starting point to help me craft beautiful, flexible web design. --> </p> 
 		</div>
 </div>
 </div><div class="row">
 <div class="col-sm-4">
 		<div class="listItem" id="jquery">
-			<div class="emphasis-peekhole"><h4 id="jquery-heading">JQuery</h4>
+			<div class="emphasis-peekhole emphasis-mid"><h4 id="jquery-heading">JQuery</h4>
 			</div>	<p>I use JQuery to create natural animations to bring pages to life without breaking functionality</p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="ajax">
-			<div class="emphasis-peekhole"><h4 id="ajax-heading">Ajax</h4>
+			<div class="emphasis-peekhole emphasis-mid"><h4 id="ajax-heading">Ajax</h4>
 			</div>	<p>When the situation calls for it, I use Ajax to make live interactive experiences and save bandwidth. </p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="php">
-			<div class="emphasis-peekhole"><h4 id="php-heading">PHP</h4>
+			<div class="emphasis-peekhole emphasis-mid"><h4 id="php-heading">PHP</h4>
 			</div>	<p>I use PHP for it's large and dedicated community, and it's established and flexible language. I use the CodeIgniter framework to produce secure and maintainable websites, with clean URLs.</p>
 		</div>
 </div>
 </div><div class="row">
 <div class="col-sm-4">
 		<div class="listItem" id="seo">
-			<div class="emphasis-peekhole"><h4 id="seo-heading">SEO and Access</h4>
+			<div class="emphasis-peekhole emphasis-btm"><h4 id="seo-heading">SEO and Access</h4>
 			</div>	<p>I structure my HTML to have important relevent content where search engines can <em>see</em> it, screen readers can <em>read</em> it, and older browsers can <em>show</em> it.</p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="documented">
-			<div class="emphasis-peekhole"><h4 id="documented-heading">Documented Work</h4>
+			<div class="emphasis-peekhole emphasis-btm"><h4 id="documented-heading">Documented Work</h4>
 			</div>	<p>I document every step and thoroughly comment my code to make my projects easy to maintain and troubleshoot.</p>
 		</div>
 </div>
 <div class="col-sm-4">
 		<div class="listItem" id="more">
-			<div class="emphasis-peekhole"><h4 id="more-heading">See More</h4>
+			<div class="emphasis-peekhole emphasis-btm"><h4 id="more-heading">See More</h4>
 			</div>	<p>You can find <a href="https://github.com/goosehub"> my projects on GitHub</a>. I am an active member of <a href="http://stackoverflow.com/users/3774582/goose">StackOverFlow</a>, a question and answer site for programmers. </p>
 		</div>
 </div></div>
@@ -132,34 +139,35 @@
 		<h3>Skills</h3>
 		<!-- Include Icons for each skill -->
 		<div id="skillsList row">
-		<div class="skillsLeft col-md-2"></div>
-		<div class="skillsLeft col-md-5">
+		<div class="skillsLeft col-sm-2 col-xs-3"></div>
+		<div class="skillsLeft col-sm-5 col-xs-9">
 			<div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-html.png"/> <h4 class="skill-name">HTML5</h4>
+			<img class="skill-img" src="resources/images/skills/skill-html.png"/> <h4 class="skill-name">HTML5</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-css.png"/> <h4 class="skill-name">CSS3</h4>
+			<img class="skill-img" src="resources/images/skills/skill-css.png"/> <h4 class="skill-name">CSS3</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-bootstrap.png"/> <h4 class="skill-name">Bootstrap</h4>
+			<img class="skill-img" src="resources/images/skills/skill-bootstrap.png"/> <h4 class="skill-name">Bootstrap</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-jquery.png"/> <h4 class="skill-name">Jquery</h4>
+			<img class="skill-img" src="resources/images/skills/skill-jquery.png"/> <h4 class="skill-name">Jquery</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-ajax.png"/> <h4 class="skill-name">AJAX</h4>
+			<img class="skill-img" src="resources/images/skills/skill-ajax.png"/> <h4 class="skill-name">AJAX</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-php.png"/> <h4 class="skill-name">PHP</h4>
+			<img class="skill-img" src="resources/images/skills/skill-php.png"/> <h4 class="skill-name">PHP</h4>
 			</div>
-		</div><div class="skillsRight col-md-5">
+		</div><div class="skillsRight col-sm-0 col-xs-3">
+		</div><div class="skillsRight col-sm-5 col-xs-9">
 			<div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-wordpress.png"/> <h4 class="skill-name">Wordpress</h4>
+			<img class="skill-img" src="resources/images/skills/skill-wordpress.png"/> <h4 class="skill-name">Wordpress</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-codeigniter.png"/> <h4 class="skill-name">CodeIgniter</h4>
+			<img class="skill-img" src="resources/images/skills/skill-codeigniter.png"/> <h4 class="skill-name">CodeIgniter</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-mysql.png"/> <h4 class="skill-name">MySql</h4>
+			<img class="skill-img" src="resources/images/skills/skill-mysql.png"/> <h4 class="skill-name">MySql</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-photoshop.png"/> <h4 class="skill-name">Photoshop</h4>
+			<img class="skill-img" src="resources/images/skills/skill-photoshop.png"/> <h4 class="skill-name">Photoshop</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-sublime.png"/> <h4 class="skill-name">Sublime Text</h4>
+			<img class="skill-img" src="resources/images/skills/skill-sublime.png"/> <h4 class="skill-name">Sublime Text</h4>
 			</div><div class="skill-item">
-			<img class="skill-img" src="resources/images/skill-github.png"/> <h4 class="skill-name">GitHub</h4>
+			<img class="skill-img" src="resources/images/skills/skill-github.png"/> <h4 class="skill-name">GitHub</h4>
 			</div>
 		</div></div>
 	</div>
@@ -172,31 +180,31 @@
 			<h3 id="portfolio-heading">Portfolio</h3>
 		</div>
 		<div class="radio portfolio-item main-showcase row">
-        <div class="radio-left col-md-7">
+        <div class="radio-left col-sm-7">
 			<a target="_blank" href="http://esfores.com/radio/"> 
-			<img class="portfolioImg" src="resources/images/portfolio-radio.jpg"/></a>
-        </div><div class="radio-right col-md-5">
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-radio.jpg"/></a>
+        </div><div class="radio-right col-sm-5">
 			<h4>Radio</h4>
 			<p>A live interactive platform for groups to share videos and audio. Includes a hosting feature that allows the host to customize the headline, background image, navigation bar, the queue, and more in real time.</p>
 			<a target="_blank" href="http://esfores.com/radio/">View the site yourself!</a>
 		</div></div>
 <div class="divider"></div>
 		<div class="gumbo portfolio-item main-showcase row">
-        <div class="gumbo-left col-md-7">
+        <div class="gumbo-left col-sm-7">
 			<h4>Gumbo YaYas</h4>
 			<p>A local cajun restaurant that needed an upgrade to their website. I added animations to give the site a more natural, professional, and enjoyable feel. I made the site easy to maintain and alter, so that the owners could make changes, advertise specials, or add content.</p>
 			<a target="_blank" href="http://gooseweb.io/gumbo/">View the site yourself!</a>
-        </div><div class="gumbo-right col-md-5">
+        </div><div class="gumbo-right col-sm-5">
 			<a target="_blank" href="http://gooseweb.io/gumbo/"> 
-			<img class="portfolioImg" src="resources/images/portfolio-gumbo.jpg"/></a>
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-gumbo.jpg"/></a>
 		</div>	
 		</div>
 <div class="divider"></div>
 		<div class="alex portfolio-item sub-showcase row">
-        <div class="alex-left col-md-7">
+        <div class="alex-left col-sm-7">
 			<a target="_blank" href="http://interplay.xyz/alex/"> 
-			<img class="portfolioImg" src="resources/images/portfolio-alex.jpg"/></a>
-        </div><div class="alex-right col-md-5">
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-alex.jpg"/></a>
+        </div><div class="alex-right col-sm-5">
 			<h4>Alex</h4>
 			<p>A simple Wordpress I created for my girlfriend. I used a Tumblr API to transfer years of content onto this Wordpress.</p>
 			<a target="_blank" href="http://interplay.xyz/alex/">View the site yourself!</a>
@@ -204,34 +212,34 @@
 
 		<div class="divider"></div>
 		<div class="zen portfolio-item sub-showcase row">
-        <div class="zen-left col-md-7">
+        <div class="zen-left col-sm-7">
 			<h4>CSS Zen Garden</h4>
 			<p>An exercise in which web designers are challenged to style a webpage without altering the HTML document, or the use of javascript. This is intended to demonstrate CSS styling with a semantic HTML document, and without limiting functionality by relying on javascript.</p>
 			<a target="_blank" href="http://interplay.xyz/zen/">View the site yourself!</a>
-        </div><div class="zen-right col-md-5">
+        </div><div class="zen-right col-sm-5">
 			<a target="_blank" href="http://interplay.xyz/zen/"> 
-			<img class="portfolioImg" src="resources/images/portfolio-zen.jpg"/></a>
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-zen.jpg"/></a>
 		</div>
 		</div>
 <div class="divider"></div>
 		<div class="tribune portfolio-item sub-showcase row">
-        <div class="tribune-left col-md-7">
+        <div class="tribune-left col-sm-7">
 			<a target="_blank" href="http://gooseweb.io/tribune/news"> 
-			<img class="portfolioImg" src="resources/images/portfolio-tribune.jpg"/></a>
-        </div><div class="tribune-right col-md-5">
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-tribune.jpg"/></a>
+        </div><div class="tribune-right col-sm-5">
 	        <h4>Tribune</h4>
 			<p>A simple and effective news platform that looks great and functions flawlessly.</p>
 			<a target="_blank" href="http://gooseweb.io/tribune/news">View the site yourself!</a>
 		</div>
 </div><div class="divider"></div>
 		<div class="magazine portfolio-item sub-showcase row">
-        <div class="magazine-left col-md-7">
+        <div class="magazine-left col-sm-7">
 			<h4>Tribune Magazine</h4>
 			<p>Tribune Magazine, an online satire zine that I produced with friends, with most of the graphic design was done by yours truly.</p>
 			<a target="_blank" href="http://esfores.com/tribunemagazine/">View the site yourself!</a>
-        </div><div class="magazine-right col-md-5">
+        </div><div class="magazine-right col-sm-5">
 			<a target="_blank" href="http://esfores.com/tribunemagazine/"> 
-			<img class="portfolioImg" src="resources/images/portfolio-tribunemagazine.jpg"/></a>
+			<img class="portfolioImg" src="resources/images/portfolio/portfolio-tribunemagazine.jpg"/></a>
 		</div></div>
 
 	</div>
@@ -245,7 +253,7 @@
 		<h3>Contact</h3>
 		<p>I am seeking both steady and freelance work in Web Development. Contact me if you need help with a project, have any questions, or even just to talk. Thank you for reading.</p>
 		<strong>
-		<p id="email">goosepostbox@gmail.com</p>
+		<a href="mailto:goosepostbox@gmail.com"><p id="email">goosepostbox@gmail.com</p></a>
 		<p id="skype">goosetube on skype</p>
 		<p id="phone">904-673-8990</p>
 		</strong>
@@ -262,7 +270,7 @@
 	</footer>
 </div>
 
-<!-- Right Column -->
+<!-- Right Colusm -->
         </div>
 	    </div>
 	  <div class="side-col col-md-2">
