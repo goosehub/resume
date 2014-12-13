@@ -7,7 +7,7 @@
 /*	Preloader for Fade-In*/
 #preloader {
     background: url("../workimage/ajax-loader.gif") no-repeat scroll center center #000000;
-    height: 100%;
+    height: 120%;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -152,13 +152,17 @@ h1, h2 {
 	text-shadow: 0.05em 0.05em 0.05em #0000FF;
 }
 .emphasis-top {
-	background: url('../resources/images/em-01.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/clouds-three.png') no-repeat center center fixed; 
 }
 .emphasis-mid {
-	background: url('../resources/images/em-02.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/clouds-many.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .emphasis-btm {
-	background: url('../resources/images/em-03.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/clouds-land.png') no-repeat center center fixed; 
 }
 
 /*	skills */
@@ -169,8 +173,8 @@ h1, h2 {
 .skills h3 {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
-	background-color: #888;
-	background: url('../resources/images/colorado-01.jpg') no-repeat center center fixed; 
+	background-color: #000;
+	background: url('../resources/images/green.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -201,11 +205,6 @@ h1, h2 {
 	background-color: #000;
 	color: #FFF;
 	padding: 0.5em;
-	background: url('../resources/images/Ceric2.gif') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 .portfolio h3 {
 	text-shadow: 0.01em 0.01em 0.01em #0000FF;

@@ -125,15 +125,4 @@ $(window).scroll(function() {
 	});
 });
 
-// $(window).scroll(function() {
-// 	var scrollTop = $(window).scrollTop();
-// 	var divam = 0.5;
-// 	$(".portfolio-headbox").css({
-// 	  "background-position":"0px -"+scrollTop/divam+"px"     
-// 	});
-// 	  $(".portfolio-headbox").css({
-// 	     "margin-top":"-"+scrollTop+"px"
-// 	});
-// });
-
 }); //End Document
