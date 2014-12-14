@@ -3,6 +3,10 @@
   font-family: "AveriaSerif-Regular";
   src: url(fonts/AveriaSerif-Regular.ttf) format("truetype");
 } 
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(fonts/OpenSans-Regular.ttf) format("truetype");
+} 
 
 /*	Preloader for Fade-In*/
 #preloader {
@@ -51,14 +55,19 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: AveriaSerif-Regular;
+	font-family: AveriaSerif-Regular, OpenSans-Regular, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 	text-shadow: 0.05em 0.05em 0.05em #FFF;
 }
 .intro, .emphasis, .skills, .portfolio, .contact {
-
 }
 p, a {
 	font-size: 1.2em;
+}
+a {
+	color: #FF0000;
+}
+a:hover {
+	color: #000;
 }
 h1, h2, h3 {
 	text-align: center;
@@ -77,29 +86,28 @@ h4 {
   width: 96%;               
   background-color:#000;
   height: 0.1em;
+  margin: 4em 0 4em 0;
 }
 
 /*	Scrollbar */
 ::-webkit-scrollbar {
-    width: 1.5em;
+    width: 1.4em;
 }
- 
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,174,240,1); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(0,0,255,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: rgba(144,199,63,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(144,199,63,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(0,0,255,0.4); 
+	background: rgba(0,174,240,1); 
 }
 
 /**/
@@ -112,11 +120,11 @@ h4 {
 .intro {
 	margin-top: -3vh;
 	height: 103vh;
-	background: url('../resources/images/top-background.png') no-repeat center center fixed; 
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
+	background: url('../resources/images/emph-01.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	text-align: center;
 }
 h1 {
@@ -128,23 +136,45 @@ h1, h2 {
 	word-spacing: 0.2em;
 }
 .intro p {
+	margin-top: 1em;
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
+	font-size: 1.6em;
 }
 
 /*	Emphasis */
+.soft-clouds {
+	background: url('../resources/images/emph-09.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.emphasis {
+	/*background: url('../resources/images/emph-01.png') no-repeat center center fixed; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.emphasis h3 {
+	color: #000;
+	margin: 1em 0 1.5em 0;
+}
 .listItem {
 	text-align: center;
 }
 .listItem h4 {
 }
+.emphasis p {
+/*	color: #FFFFFF;
+	border:0;
+	border-radius: 0.5em;
+	/*background-color: rgba(0,0,0,0.8);;*/*/
+}
 .emphasis-peekhole {
 	padding: 0.5em;
 	background-color: #888;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	border: 1px solid #888;
 	border-radius: 1em 3em 3em 9em;
 	font-weight: bold;
@@ -152,42 +182,54 @@ h1, h2 {
 	text-shadow: 0.05em 0.05em 0.05em #0000FF;
 }
 .emphasis-top {
-	background: url('../resources/images/clouds-three.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-13.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .emphasis-mid {
-	background: url('../resources/images/clouds-many.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-02.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .emphasis-btm {
-	background: url('../resources/images/clouds-land.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-07.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*	skills */
 .skills {
 	clear: both;
-	margin-bottom: 22em;
+	/*	Extreme bottom margin*/
+	/*margin-bottom: 22em;*/
 }
-.skills h3 {
+#skills-headbox {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
 	background-color: #000;
-	background: url('../resources/images/green.jpg') no-repeat center center fixed; 
+	background: url('../resources/images/emph-14.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	border: 1px solid #888;
 	border-radius: 1em 1em 9em 9em;
+}
+.skills h3 {
 	font-weight: bold;
-	color: #FFF;
+	color: #000;
+	opacity: 0.8;
 	text-shadow: 0.01em 0.01em 0.01em #0000FF;
 }
 .skill-item {
 	display: block;
-	margin: 0.25em;
+	margin: 1em;
 }
 .skill-img {
 	height: 2em;
@@ -210,8 +252,8 @@ h1, h2 {
 	text-shadow: 0.01em 0.01em 0.01em #0000FF;
 }
 .portfolio-item {
-	margin-top: 4em;
-	margin-bottom: 4em;
+	margin-top: 8em;
+	margin-bottom: 8em;
 }
 .portfolioImg {
 	height: 200px;
@@ -229,6 +271,9 @@ h1, h2 {
 .portfolio-item .col-sm-7 p {
 	width: 71%;
 	max-width: 91%;
+}
+.portfolio-item .col-sm-5 p {
+	max-width: 66vh;
 }
 .portfolio-item a {
 	font-size: 1.6em;

@@ -92,16 +92,16 @@ $(window).scroll(function(){
     fadeInLeftCheckAnimation('.radio-left');
     fadeInLeftCheckAnimation('.gumbo-left');
     fadeInLeftCheckAnimation('.alex-left');
-    fadeInLeftCheckAnimation('.zen-left');
+    // fadeInLeftCheckAnimation('.zen-left');
     fadeInLeftCheckAnimation('.tribune-left');
-    fadeInLeftCheckAnimation('.magazine-left');
+    // fadeInLeftCheckAnimation('.magazine-left');
 
     fadeInRightCheckAnimation('.radio-right');
     fadeInRightCheckAnimation('.gumbo-right');
     fadeInRightCheckAnimation('.alex-right');
-    fadeInRightCheckAnimation('.zen-right');
+    // fadeInRightCheckAnimation('.zen-right');
     fadeInRightCheckAnimation('.tribune-right');
-    fadeInRightCheckAnimation('.magazine-right');
+    // fadeInRightCheckAnimation('.magazine-right');
 
     // fadeInCheckAnimation('#idenity-heading');
     // fadeInCheckAnimation('#response-heading');
@@ -114,15 +114,15 @@ $(window).scroll(function(){
     // fadeInCheckAnimation('#more-heading');
 });
 
-$(window).scroll(function() {
-	var scrollTop = $(window).scrollTop();
-	var divam = 1;
-	$(".intro").css({
-	  "background-position":"0px -"+scrollTop/divam+"px"     
-	});
-	  $(".intro").css({
-	     "margin-top":"-"+scrollTop+"px"
-	});
-});
+// $(window).scroll(function() {
+// 	var scrollTop = $(window).scrollTop();
+// 	var divam = 1;
+// 	$(".intro").css({
+// 	  "background-position":"0px -"+scrollTop/divam+"px"     
+// 	});
+// 	  $(".intro").css({
+// 	     "margin-top":"-"+scrollTop+"px"
+// 	});
+// });
 
 }); //End Document

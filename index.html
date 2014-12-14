@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="resources/tools/bootstrap.min.css" />
 	<link rel="stylesheet" href="resources/style.css" />
 	<link rel="stylesheet" href="resources/tools/animate.css" />
-    <link rel="shortcut icon" href="resources/images/favicon.ico">
+    <link rel="shortcut icon" href="resources/favicon.ico">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -55,6 +55,8 @@
 </div>
 </section>
 
+<div class="soft-clouds">
+
 <!-- Left Column -->
 <div class="row">
   <div class="side-col col-md-2">
@@ -71,7 +73,7 @@
 <div class="col-sm-4">
 		<div class="listItem" id="identity">
 			<div class="emphasis-peekhole emphasis-top"><h4 id="idenity-heading">Identity</h4>
-			</div>	<p>I keep focus on the content, and work with clients to craft a <strong>unique</strong> and <em>compelling</em> identity.</p>
+			</div>	<p>I work with clients to craft a <strong>unique</strong> and <em>compelling</em> identity.</p>
 		</div>
 </div>
 <div class="col-sm-4">
@@ -80,19 +82,21 @@
 			</div>	<p>I design websites that run across all devices, including <strong>phones</strong>,  <strong>tablets</strong>,  <strong>laptops</strong>, and <strong>televisions</strong>. </p>
 		</div>
 </div>
-<div class="col-sm-4">
+<!-- <div class="col-sm-4">
 		<div class="listItem" id="html">
 			<div class="emphasis-peekhole emphasis-top"><h4 id="html-heading">Semantic HTML</h4>
-			</div>	<p>I create all of my presentation in the CSS, and leave the structure intact, giving a more reliable experience and easier to maintain projects. <!-- I use Bootstrap/LESS/SASS as a framework and a starting point to help me craft beautiful, flexible web design. --> </p> 
+			</div>	<p>I create all of my presentation in the CSS, and leave the structure intact, giving a more reliable experience and easier to maintain projects.</p> 
 		</div>
-</div>
-</div><div class="row">
+</div> -->
+<div class="row">
 <div class="col-sm-4">
 		<div class="listItem" id="jquery">
-			<div class="emphasis-peekhole emphasis-mid"><h4 id="jquery-heading">JQuery</h4>
+			<div class="emphasis-peekhole emphasis-top"><h4 id="jquery-heading">JQuery</h4>
 			</div>	<p>I use JQuery to create natural animations to bring pages to life without breaking functionality</p>
 		</div>
 </div>
+</div>
+
 <div class="col-sm-4">
 		<div class="listItem" id="ajax">
 			<div class="emphasis-peekhole emphasis-mid"><h4 id="ajax-heading">Ajax</h4>
@@ -102,14 +106,20 @@
 <div class="col-sm-4">
 		<div class="listItem" id="php">
 			<div class="emphasis-peekhole emphasis-mid"><h4 id="php-heading">PHP</h4>
-			</div>	<p>I use PHP for it's large and dedicated community, and it's established and flexible language. I use the CodeIgniter framework to produce secure and maintainable websites, with clean URLs.</p>
+			</div>	<p>I use PHP for it's large and dedicated community, and it's established and flexible language.</p>
+		</div>
+</div>
+<div class="col-sm-4">
+		<div class="listItem" id="codeigniter">
+			<div class="emphasis-peekhole emphasis-mid"><h4 id="codeigniter-heading">CodeIgniter</h4>
+			</div>	<p>I use the CodeIgniter framework to produce secure and maintainable websites, with clean URLs.</p>
 		</div>
 </div>
 </div><div class="row">
 <div class="col-sm-4">
 		<div class="listItem" id="seo">
 			<div class="emphasis-peekhole emphasis-btm"><h4 id="seo-heading">SEO and Access</h4>
-			</div>	<p>I structure my HTML to have important relevent content where search engines can <em>see</em> it, screen readers can <em>read</em> it, and older browsers can <em>show</em> it.</p>
+			</div>	<p>I place important relevent content where search engines can <em>see</em> it, screen readers can <em>read</em> it, and older browsers can <em>show</em> it.</p>
 		</div>
 </div>
 <div class="col-sm-4">
@@ -121,7 +131,7 @@
 <div class="col-sm-4">
 		<div class="listItem" id="more">
 			<div class="emphasis-peekhole emphasis-btm"><h4 id="more-heading">See More</h4>
-			</div>	<p>You can find <a href="https://github.com/goosehub"> my projects on GitHub</a>. I am an active member of <a href="http://stackoverflow.com/users/3774582/goose">StackOverFlow</a>, a question and answer site for programmers. </p>
+			</div>	<p>You can find <a href="https://github.com/goosehub"> my projects on GitHub</a>. I am an active member of <a href="http://stackoverflow.com/users/3774582/goose">StackOverFlow</a>, a Q&A site for programmers. </p>
 		</div>
 </div></div>
 	</div>
@@ -132,7 +142,9 @@
 	<div class="empty-space"></div>
 <!-- NOTE: This divider causes problems. Careful when making styling or semantic changes here -->
 <div class="divider special-divider"></div>
-		<h3>Skills</h3>
+		<div id="skills-headbox">
+			<h3>Skills</h3>
+		</div>
 		<!-- Include Icons for each skill -->
 		<div id="skillsList row">
 		<div class="skillsLeft col-sm-2 col-xs-3"></div>
@@ -169,9 +181,12 @@
 	</div>
 </section>
 
+<!-- Issue for margins here, so <br/> used here instead -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 <section class="portfolio">
 	<div class="portfolioCnt">
-	
+
 	<div class="divider"></div>
 		<div class="portfolio-headbox">
 			<h3 id="portfolio-heading">Portfolio</h3>
@@ -209,7 +224,18 @@
 			<a target="_blank" href="http://interplay.xyz/alex/">View the site yourself!</a>
 		</div></div>
 
-		<div class="divider"></div>
+		</div><div class="divider"></div>
+				<div class="tribune portfolio-item sub-showcase row">
+		        <div class="tribune-left col-sm-7">
+					<h4>Tribune</h4>
+					<p>A simple and effective news platform that looks great and functions flawlessly.</p>
+					<a target="_blank" href="http://gooseweb.io/tribune/news">View the site yourself!</a>
+		        </div><div class="tribune-right col-sm-5">
+					<a target="_blank" href="http://gooseweb.io/tribune/news"> 
+					<img class="portfolioImg" src="resources/images/portfolio/portfolio-tribune.jpg"/></a>
+				</div></div>
+
+<!-- 		<div class="divider"></div>
 		<div class="zen portfolio-item sub-showcase row">
         <div class="zen-left col-sm-7">
 			<h4>CSS Zen Garden</h4>
@@ -219,9 +245,9 @@
 			<a target="_blank" href="http://interplay.xyz/zen/"> 
 			<img class="portfolioImg" src="resources/images/portfolio/portfolio-zen.jpg"/></a>
 		</div>
-		</div>
+		</div> -->
 
-<div class="divider"></div>
+<!-- <div class="divider"></div>
 		<div class="tribune portfolio-item sub-showcase row">
         <div class="tribune-left col-sm-7">
 			<a target="_blank" href="http://gooseweb.io/tribune/news"> 
@@ -230,9 +256,9 @@
 	        <h4>Tribune</h4>
 			<p>A simple and effective news platform that looks great and functions flawlessly.</p>
 			<a target="_blank" href="http://gooseweb.io/tribune/news">View the site yourself!</a>
-		</div>
+		</div> -->
 
-</div><div class="divider"></div>
+<!-- </div><div class="divider"></div>
 		<div class="magazine portfolio-item sub-showcase row">
         <div class="magazine-left col-sm-7">
 			<h4>Tribune Magazine</h4>
@@ -241,7 +267,7 @@
         </div><div class="magazine-right col-sm-5">
 			<a target="_blank" href="http://esfores.com/tribunemagazine/"> 
 			<img class="portfolioImg" src="resources/images/portfolio/portfolio-tribunemagazine.jpg"/></a>
-		</div></div>
+		</div></div> -->
 
 	</div>
 </section>
@@ -277,6 +303,8 @@
 	  <div class="side-col col-md-2">
 	  </div>
 	</div>
+</div>
+
 </div>
 
     <!-- Script -->
