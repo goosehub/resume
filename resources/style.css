@@ -1,3 +1,63 @@
+/*	Global */
+body {
+	overflow-x: hidden;
+	font-family: AveriaSerif-Regular, OpenSans-Regular, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	text-shadow: 0.05em 0.05em 0.05em #FFF;
+}
+.intro, .emphasis, .skills, .portfolio, .contact {
+}
+p, a {
+	font-size: 1.2em;
+}
+a {
+	color: #FF0000;
+}
+a:hover {
+	color: #000;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+h3 {
+	font-size: 4em;
+}
+h4 {
+	font-size: 1.8em;
+}
+.divider {
+  opacity: 0.2;
+  border: 0.2em;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#000;
+  height: 0.1em;
+  margin: 4em 0 4em 0;
+}
+
+/*	Small Screens*/
+@media all and (max-width: 990px) {
+	.skill-name {
+		font-size: 1em !important;
+	}
+	h1 {
+	padding-top: 4vh !important;
+	}
+	.intro, .soft-clouds, .emphasis-top, .emphasis-mid, .emphasis-btm, #skills-headbox {
+	background: url('../resources/images/emph-17.png') no-repeat center center fixed !important; 
+	-webkit-background-size: 100% 100% !important;
+	-moz-background-size: 100% 100% !important;
+	-o-background-size: 100% 100% !important;
+	background-size: 100% 100% !important;
+	}
+	.emphasis h4 {
+		color: #000 !important;
+	}
+	#email {
+		font-size: 1em !important;
+	}
+}
+
 /*	Load fonts */
 @font-face {
   font-family: "AveriaSerif-Regular";
@@ -37,58 +97,6 @@
   -o-animation-delay: 0.4s;
 }
 
-/*#idenity-heading, #response-heading, #html-heading, #jquery-heading, #ajax-heading, 
-#php-heading, #seo-heading, #documented-heading, #more-heading {
-  	-webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-}*/
-
-/*	Global */
-body {
-	overflow-x: hidden;
-	/*background: url('/resume/resources/images/tree.jpg') no-repeat center center fixed; */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family: AveriaSerif-Regular, OpenSans-Regular, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-	text-shadow: 0.05em 0.05em 0.05em #FFF;
-}
-.intro, .emphasis, .skills, .portfolio, .contact {
-}
-p, a {
-	font-size: 1.2em;
-}
-a {
-	color: #FF0000;
-}
-a:hover {
-	color: #000;
-}
-h1, h2, h3 {
-	text-align: center;
-}
-h3 {
-	font-size: 4em;
-}
-h4 {
-	font-size: 1.8em;
-}
-.divider {
-  opacity: 0.2;
-  border: 0.2em;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:#000;
-  height: 0.1em;
-  margin: 4em 0 4em 0;
-}
-
 /*	Scrollbar */
 ::-webkit-scrollbar {
     width: 1.4em;
@@ -121,10 +129,10 @@ h4 {
 	margin-top: -3vh;
 	height: 103vh;
 	background: url('../resources/images/emph-01.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 	text-align: center;
 }
 h1 {
@@ -139,23 +147,16 @@ h1, h2 {
 	margin-top: 1em;
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 /*	Emphasis */
 .soft-clouds {
 	background: url('../resources/images/emph-09.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.emphasis {
-	/*background: url('../resources/images/emph-01.png') no-repeat center center fixed; */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .emphasis h3 {
 	color: #000;
@@ -183,24 +184,24 @@ h1, h2 {
 }
 .emphasis-top {
 	background: url('../resources/images/emph-13.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .emphasis-mid {
 	background: url('../resources/images/emph-02.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .emphasis-btm {
 	background: url('../resources/images/emph-07.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 
 /*	skills */
@@ -213,11 +214,11 @@ h1, h2 {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
 	background-color: #000;
-	background: url('../resources/images/emph-14.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url('../resources/images/emph-16.png') no-repeat center center fixed !important; 
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
 	border: 1px solid #888;
 	border-radius: 1em 1em 9em 9em;
 }
@@ -275,9 +276,6 @@ h1, h2 {
 .portfolio-item .col-sm-5 p {
 	max-width: 66vh;
 }
-.portfolio-item a {
-	font-size: 1.6em;
-}
 
 /*	Contact */
 #contact p {
@@ -293,6 +291,7 @@ h1, h2 {
 }
 
 /*	Credits */
-#credit, #copyright {
+#credit, #copyright, #disclaimer {
 	clear: both;
+	margin-left: 2em;
 }
