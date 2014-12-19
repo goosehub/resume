@@ -12,16 +12,46 @@ $(document).ready(function()
 
 // Parallax
 
-// $(window).scroll(function() {
-// 	var scrollTop = $(window).scrollTop();
-// 	var divam = 1;
-// 	$(".intro").css({
-// 	  "background-position":"0px -"+scrollTop/divam+"px"     
-// 	});
-// 	  $(".intro").css({
-// 	     "margin-top":"-"+scrollTop+"px"
-// 	});
-// });
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	var divam = 2.0;
+	$(".layer-1").css({
+	  "background-position":"0px -"+scrollTop/divam+"px"     
+	});
+	  $(".layer-1").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+});
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	var divam = 1.8;
+	$(".layer-2").css({
+	  "background-position":"0px -"+scrollTop/divam+"px"     
+	});
+	  $(".layer-2").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+});
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	var divam = 1.6;
+	$(".layer-3").css({
+	  "background-position":"0px -"+scrollTop/divam+"px"     
+	});
+	  $(".layer-3").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+});
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+	var divam = 1.4;
+	$(".layer-4").css({
+	  "background-position":"0px -"+scrollTop/divam+"px"     
+	});
+	  $(".layer-4").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+});
 
 // Animations
 
