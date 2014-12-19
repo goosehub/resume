@@ -1,0 +1,85 @@
+
+Cory Long
+Resume and Work Showcase
+Hi, I'm a web designer and developer based in Jacksonville, Florida. I love to create engaging front end designs and dependable back end development. I'm passionate about what I do. Let me tell you about it.
+
+Points of Emphasis
+Identity
+I keep focus on the content, and work with clients to craft a unique and compelling identity.
+
+Responsive Design
+I design websites that run across all devices, including phones, tablets, laptops, and televisions.
+
+Semantic HTML
+I create all of my presentation in the CSS, and leave the structure intact, giving a more reliable experience and easier to maintain projects.
+
+JQuery
+I use JQuery to create natural animations to bring pages to life without breaking functionality
+
+Ajax
+When the situation calls for it, I use Ajax to make live interactive experiences and save bandwidth.
+
+PHP
+I use PHP for it's large and dedicated community, and it's established and flexible language. I use the CodeIgniter framework to produce secure and maintainable websites, with clean URLs.
+
+SEO and Access
+I structure my HTML to have important relevent content where search engines can see it, screen readers can read it, and older browsers can show it.
+
+Documented Work
+I document every step and thoroughly comment my code to make my projects easy to maintain and troubleshoot.
+
+See More
+You can find my projects on GitHub. I am an active member of StackOverFlow, a question and answer site for programmers.
+
+Skills
+ HTML5
+ CSS3
+ Bootstrap
+ Jquery
+ AJAX
+ PHP
+ Wordpress
+ CodeIgniter
+ MySql
+ Photoshop
+ Sublime Text
+ GitHub
+
+Portfolio
+ 
+Radio
+A live interactive platform for groups to share videos and audio. Includes a hosting feature that allows the host to customize the headline, background image, navigation bar, the queue, and more in real time.
+
+View the site yourself!
+Gumbo YaYas
+A local cajun restaurant that needed an upgrade to their website. I added animations to give the site a more natural, professional, and enjoyable feel. I made the site easy to maintain and alter, so that the owners could make changes, advertise specials, or add content.
+
+View the site yourself! 
+ 
+Alex
+A simple Wordpress I created for my girlfriend. I used a Tumblr API to transfer years of content onto this Wordpress.
+
+View the site yourself!
+CSS Zen Garden
+An exercise in which web designers are challenged to style a webpage without altering the HTML document, or the use of javascript. This is intended to demonstrate CSS styling with a semantic HTML document, and without limiting functionality by relying on javascript.
+
+View the site yourself! 
+ 
+Tribune
+A simple and effective news platform that looks great and functions flawlessly.
+
+View the site yourself!
+Tribune Magazine
+Tribune Magazine, an online satire zine that I produced with friends, with most of the graphic design was done by yours truly.
+
+View the site yourself! 
+Contact
+I am seeking both steady and freelance work in Web Development. Contact me if you need help with a project, have any questions, or even just to talk. Thank you for reading.
+
+goosepostbox@gmail.com
+goosetube on skype
+904-673-8990
+
+Website Design by Cory Long
+All images are free to use for personal use
+©2014
