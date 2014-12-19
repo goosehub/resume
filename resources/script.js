@@ -14,39 +14,30 @@ $(document).ready(function()
 
 $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
-	var divam = 2.0;
+	var divam1 = 2.0;
+	var divam2 = 1.8;
+	var divam3 = 0.8;
+	var divam4 = 0.4;
 	$(".layer-1").css({
-	  "background-position":"0px -"+scrollTop/divam+"px"     
+	  "background-position":"0px -"+scrollTop/divam1+"px"     
+	});
+	$(".layer-2").css({
+	  "background-position":"0px -"+scrollTop/divam2+"px"     
+	});
+	$(".layer-3").css({
+	  "background-position":"0px -"+scrollTop/divam3+"px"     
+	});
+	$(".layer-4").css({
+	  "background-position":"0px -"+scrollTop/divam4+"px"     
 	});
 	  $(".layer-1").css({
 	     "margin-top":"-"+scrollTop+"px"
 	});
-});
-$(window).scroll(function() {
-	var scrollTop = $(window).scrollTop();
-	var divam = 1.8;
-	$(".layer-2").css({
-	  "background-position":"0px -"+scrollTop/divam+"px"     
-	});
 	  $(".layer-2").css({
 	     "margin-top":"-"+scrollTop+"px"
 	});
-});
-$(window).scroll(function() {
-	var scrollTop = $(window).scrollTop();
-	var divam = 1.6;
-	$(".layer-3").css({
-	  "background-position":"0px -"+scrollTop/divam+"px"     
-	});
 	  $(".layer-3").css({
 	     "margin-top":"-"+scrollTop+"px"
-	});
-});
-$(window).scroll(function() {
-	var scrollTop = $(window).scrollTop();
-	var divam = 1.4;
-	$(".layer-4").css({
-	  "background-position":"0px -"+scrollTop/divam+"px"     
 	});
 	  $(".layer-4").css({
 	     "margin-top":"-"+scrollTop+"px"
