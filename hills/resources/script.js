@@ -1,10 +1,11 @@
 // Preloader
-    $(window).load(function(){ 
-    $('#preloader').delay ( 500 ).fadeOut(2000,function(){$(this).remove();});
+	$(window).load(function(){ 
+    $('#preloader').fadeOut(2000,function(){$(this).remove();});
 });
 
 	$('#headline').addClass('animated fadeInLeft');
 	$('#sub-headline').addClass('animated fadeInRight');
+	$('#intro-p').addClass('animated bounceIn');
 
 $(document).ready(function()
 {
@@ -13,48 +14,35 @@ $(document).ready(function()
 
 $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
-	var fronthill = 0.7;
-	var backhill = 0.8;
-	var mountains = 5;
-	var suns = 5;
-    var cloudshigh = 5;
-    var cloudslow = 5;
+	var divam1 = 2.0;
+	var divam2 = 1.8;
+	var divam3 = 20;
+	var divam4 = 20;
+    var divamStay = 1;
 	$(".layer-1").css({
-	  "background-position":"0px -"+scrollTop/fronthill+"px"     
+	  "background-position":"0px -"+scrollTop/divam1+"px"     
 	});
-      $(".layer-1").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
 	$(".layer-2").css({
-	  "background-position":"0px -"+scrollTop/backhill+"px"     
+	  "background-position":"0px -"+scrollTop/divam2+"px"     
 	});
-      $(".layer-2").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
 	$(".layer-3").css({
-	  "background-position":"0px -"+scrollTop/mountains+"px"     
+	  "background-position":"0px -"+scrollTop/divam3+"px"     
 	});
-      $(".layer-3").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
 	$(".layer-4").css({
-	  "background-position":"0px -"+scrollTop/suns+"px"     
+	  "background-position":"0px -"+scrollTop/divam4+"px"     
 	});
-      $(".layer-4").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
-    $(".layer-5").css({
-      "background-position":"0px -"+scrollTop/cloudshigh+"px"     
-    });
-      $(".layer-5").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
-    $(".layer-6").css({
-      "background-position":"0px -"+scrollTop/cloudslow+"px"     
-    });
-      $(".layer-6").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
+	  $(".layer-1").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+	  $(".layer-2").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+	  $(".layer-3").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
+	  $(".layer-4").css({
+	     "margin-top":"-"+scrollTop+"px"
+	});
 });
 
 // Animations
