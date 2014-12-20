@@ -1,10 +1,7 @@
 // Preloader
     $(window).load(function(){ 
-    $('#preloader').delay ( 500 ).fadeOut(2000,function(){$(this).remove();});
+    $('#preloader').fadeOut(2000,function(){$(this).remove();});
 });
-
-	$('#headline').addClass('animated fadeInLeft');
-	$('#sub-headline').addClass('animated fadeInRight');
 
 $(document).ready(function()
 {
@@ -77,9 +74,6 @@ function isElementInViewport(elem) {
 function fadeInCheckAnimation(see) {
     var $see = $(see);
 
-    // If the animation has already been started
-    // if ($elem.hasClass('start')) return;
-
     if (isElementInViewport($see)) {
         // Start the animation
         // $elem.addClass('start');
@@ -90,9 +84,6 @@ function fadeInCheckAnimation(see) {
 
 function fadeInLeftCheckAnimation(see) {
     var $see = $(see);
-
-    // If the animation has already been started
-    // if ($elem.hasClass('start')) return;
 
     if (isElementInViewport($see)) {
         // Start the animation
@@ -105,9 +96,6 @@ function fadeInLeftCheckAnimation(see) {
 function fadeInRightCheckAnimation(see) {
     var $see = $(see);
 
-    // If the animation has already been started
-    // if ($elem.hasClass('start')) return;
-
     if (isElementInViewport($see)) {
         // Start the animation
         // $elem.addClass('start');
@@ -118,9 +106,6 @@ function fadeInRightCheckAnimation(see) {
 
 function fadeInUpCheckAnimation(see) {
     var $see = $(see);
-
-    // If the animation has already been started
-    // if ($elem.hasClass('start')) return;
 
     if (isElementInViewport($see)) {
         // Start the animation
@@ -140,26 +125,13 @@ $(window).scroll(function(){
     fadeInLeftCheckAnimation('.radio-left');
     fadeInLeftCheckAnimation('.gumbo-left');
     fadeInLeftCheckAnimation('.alex-left');
-    // fadeInLeftCheckAnimation('.zen-left');
     fadeInLeftCheckAnimation('.tribune-left');
-    // fadeInLeftCheckAnimation('.magazine-left');
 
     fadeInRightCheckAnimation('.radio-right');
     fadeInRightCheckAnimation('.gumbo-right');
     fadeInRightCheckAnimation('.alex-right');
-    // fadeInRightCheckAnimation('.zen-right');
     fadeInRightCheckAnimation('.tribune-right');
-    // fadeInRightCheckAnimation('.magazine-right');
 
-    // fadeInCheckAnimation('#idenity-heading');
-    // fadeInCheckAnimation('#response-heading');
-    // fadeInCheckAnimation('#html-heading');
-    // fadeInCheckAnimation('#jquery-heading');
-    // fadeInCheckAnimation('#ajax-heading');
-    // fadeInCheckAnimation('#php-heading');
-    // fadeInCheckAnimation('#seo-heading');
-    // fadeInCheckAnimation('#documented-heading');
-    // fadeInCheckAnimation('#more-heading');
 });
 
 }); //End Document
