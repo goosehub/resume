@@ -114,24 +114,32 @@ function fadeInUpCheckAnimation(see) {
 
     }
 }
+// Check if mobile
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+// If mobile, do not run scripts.
+}else
+{
+//Now include js files
 
-// Capture scroll events
-$(window).scroll(function(){
-    fadeInCheckAnimation('#portfolio-heading');
-    fadeInLeftCheckAnimation('.skillsLeft');
-    fadeInRightCheckAnimation('.skillsRight');
-    fadeInUpCheckAnimation('.contact');
+  // Capture scroll events
+  $(window).scroll(function(){
+      fadeInCheckAnimation('#portfolio-heading');
+      fadeInLeftCheckAnimation('.skillsLeft');
+      fadeInRightCheckAnimation('.skillsRight');
+      fadeInUpCheckAnimation('.contact');
 
-    fadeInLeftCheckAnimation('.radio-left');
-    fadeInLeftCheckAnimation('.gumbo-left');
-    fadeInLeftCheckAnimation('.alex-left');
-    fadeInLeftCheckAnimation('.tribune-left');
+      fadeInLeftCheckAnimation('.radio-left');
+      fadeInLeftCheckAnimation('.gumbo-left');
+      fadeInLeftCheckAnimation('.alex-left');
+      fadeInLeftCheckAnimation('.tribune-left');
 
-    fadeInRightCheckAnimation('.radio-right');
-    fadeInRightCheckAnimation('.gumbo-right');
-    fadeInRightCheckAnimation('.alex-right');
-    fadeInRightCheckAnimation('.tribune-right');
+      fadeInRightCheckAnimation('.radio-right');
+      fadeInRightCheckAnimation('.gumbo-right');
+      fadeInRightCheckAnimation('.alex-right');
+      fadeInRightCheckAnimation('.tribune-right');
 
-});
+  });
+
+}
 
 }); //End Document
