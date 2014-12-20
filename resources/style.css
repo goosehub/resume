@@ -64,9 +64,6 @@
 	.skill-name {
 		font-size: 1em !important;
 	}
-	#header {
-		padding-top: 4vh !important;
-	}
 	.intro, .soft-clouds, .emphasis-top, .emphasis-mid, .emphasis-btm, #skills-headbox {
 		background: url('../resources/images/emph-17.png') no-repeat center center fixed !important; 
 		-webkit-background-size: cover !important;
@@ -149,6 +146,8 @@ h4 {
 	left: 0;
 	top: 0;
 	background-position: no-repeat top center fixed;
+/*	transition: .15s ease-in-out;
+	transition-property: background-position;*/
 }
 .layer-1 {
 	background: url('../resources/images/a-01.png'); 
@@ -192,16 +191,15 @@ h4 {
 }*/
 
 #header {
-	padding-top: 25vh;
+	padding-top: 8vh;
 	z-index: 29;
 	position: fixed;
+	margin-left: 30%;
 }
 .intro {
 	margin-top: -4vh;
-	text-align: center;
 }
 h1, h2 {
-	width: 91%;
 	letter-spacing: 0.2em;
 	word-spacing: 0.2em;
 }
@@ -210,12 +208,20 @@ h1, h2 {
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
 	font-size: 1.4em;
-	max-width: 66%;
-	margin-left: 12%;
+}
+
+#after-intro {
+	position: relative;
+	z-index: 50;
+	background: #FFF;
+}
+#triangle {
+	width: 100%;
 }
 
 /*	Emphasis */
 .emphasis {
+	margin-top: -200px;
 }
 .emphasis h3 {
 	color: .000;
@@ -235,21 +241,21 @@ h1, h2 {
 	text-shadow: 0.05em 0.05em 0.05em #0000FF;
 }
 .emphasis-top {
-	background: url('../resources/images/emph-13.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-01.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .emphasis-mid {
-	background: url('../resources/images/emph-13.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-02.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 .emphasis-btm {
-	background: url('../resources/images/emph-13.png') no-repeat center center fixed; 
+	background: url('../resources/images/emph-16.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

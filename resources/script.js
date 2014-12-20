@@ -16,8 +16,9 @@ $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
 	var divam1 = 2.0;
 	var divam2 = 1.8;
-	var divam3 = 0.8;
-	var divam4 = 0.4;
+	var divam3 = 20;
+	var divam4 = 20;
+    var divamStay = 1;
 	$(".layer-1").css({
 	  "background-position":"0px -"+scrollTop/divam1+"px"     
 	});
