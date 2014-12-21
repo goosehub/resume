@@ -60,20 +60,21 @@
 }
 
 /*	Small Screens*/
-@media all and (min-width: 990px) {
+/*@media all and (min-width: 990px) {
 	#mobile {
 		display: none;
 	}
+}*/
+
+#mobile, #triangle {
+	width: 100%;
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 900px) {
 	h3 {
 		font-size: 2em !important;
 	}
 	.parallax-wrap {
 		display: none;
-	}
-	#mobile {
-		width: 100%;
 	}
 	.emphasis-item {
 		margin-bottom: 2em;
