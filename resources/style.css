@@ -1,4 +1,4 @@
-/*														*/
+														*/
 /*														*/ 
 /*	Hello												*/
 /*														*/
@@ -84,34 +84,37 @@
 	position: relative;
 	z-index: 50;
 }
+/*	By default, Do not display mobile intro */
 #mobile {
 	display: none;
 }
 @media all and (max-width: 1100px) {
+/*	Shrink headers to fit */
 	h3 {
 		font-size: 2em;
 	}
 	.parallax-wrap, #traingle {
 		display: none;
 	}
+/*	If mobile, display mobile intro */
 	#mobile {
 		display: inline;
 	}
+/*	Shrink emphasis items margin */
 	.emphasis-item {
 		margin-bottom: 2em;
 	}
+/*	Replace emphasis background for functionality */
 	.emphasis-peekhole {
 		background: #21b8ff !important;
 	}
+/*	Replace skills background for functionality*/
 	#skills-headbox {
 		background: #fff !important;
 	}
-	.portfolio-item .col-sm-5 {
-		float: left !important;
-	}
 }
 
-/*	Here are some global rules */
+/*	Here are my Global rules */
 
 body {
 	overflow-x: hidden;
@@ -126,11 +129,11 @@ a {
 	letter-spacing: 0.1em;
 	word-spacing: 0.1em;
 	color: #4444FF;
-  -o-transition:1s;
-  -ms-transition:1s;
-  -moz-transition:1s;
-  -webkit-transition:1s;
-  transition:1s;
+	-o-transition:1s;
+	-ms-transition:1s;
+	-moz-transition:1s;
+	-webkit-transition:1s;
+	transition:1s;
 }
 a:hover {
 	color: #000;
@@ -324,11 +327,11 @@ h4 {
 	font-size: 1.2em;
 	letter-spacing: 0.4em;
 	background-color: #8dc73f;
-	  -o-transition:1s;
-	  -ms-transition:1s;
-	  -moz-transition:1s;
-	  -webkit-transition:1s;
-	  transition:1s;
+	-o-transition:1s;
+	-ms-transition:1s;
+	-moz-transition:1s;
+	-webkit-transition:1s;
+	transition:1s;
 }
 .submit:hover {
 	background-color: #00aef0;
@@ -346,4 +349,4 @@ h4 {
 
 /*	That's it */
 
-/*	Check out script.js Next! */
+/*	Check out script.js Next! 
