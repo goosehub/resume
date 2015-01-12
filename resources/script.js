@@ -1,4 +1,19 @@
-// Preloader
+// 
+// 
+// Hello
+// 
+// Thank you for taking time to look at my script
+//
+// I worked hard on it, and I hope you enjoy it.
+//
+// 
+// 
+
+// Let's start with the Preloader
+
+// Note:
+// If user has javascript disabled, html displays this element, otherwise, it is faded in with script
+
     $(window).load(function(){ 
     $('#preloader').fadeOut(2000,function(){$(this).remove();});
 });
@@ -6,140 +21,107 @@
 $(document).ready(function()
 {
 
-// Parallax
+// Here is the Parallax you saw
 
+// Note:
+// If user is mobile, I disable the Parallax attempt to ensure mobile functionality
+
+// First I get the window position
 $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
-	var fronthill = 0.7;
-	var backhill = 0.8;
-	var mountains = 5;
-	var suns = 5;
-    var cloudshigh = 5;
-    var cloudslow = 5;
-	$(".layer-1").css({
-	  "background-position":"0px -"+scrollTop/fronthill+"px"     
-	});
-      $(".layer-1").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
+
+// then I set the Paralax speed
+  var foreground = 0.5;
+
+// Finally, I do the Parallax logic
 	$(".layer-2").css({
-	  "background-position":"0px -"+scrollTop/backhill+"px"     
+	  "background-position":"0px -"+scrollTop/foreground+"px"     
 	});
       $(".layer-2").css({
          "margin-top":"-"+scrollTop+"px"
     });
-	$(".layer-3").css({
-	  "background-position":"0px -"+scrollTop/mountains+"px"     
-	});
-      $(".layer-3").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
-	$(".layer-4").css({
-	  "background-position":"0px -"+scrollTop/suns+"px"     
-	});
-      $(".layer-4").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
-    $(".layer-5").css({
-      "background-position":"0px -"+scrollTop/cloudshigh+"px"     
-    });
-      $(".layer-5").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
-    $(".layer-6").css({
-      "background-position":"0px -"+scrollTop/cloudslow+"px"     
-    });
-      $(".layer-6").css({
-         "margin-top":"-"+scrollTop+"px"
-    });
 });
 
-// Animations
+// Here is the Animations you saw
 
+// Here is a function to determine if element is in viewport
 function isElementInViewport(elem) {
     var $elem = $(elem);
 
-    // Get the scroll position of the page.
+// First I get the scroll position of the page.
     var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
     var viewportTop = $(scrollElem).scrollTop();
     var viewportBottom = viewportTop + $(window).height();
 
-    // Get the position of the element on the page.
+// Then I get the position of the element on the page.
     var elemTop = Math.round( $elem.offset().top );
     var elemBottom = elemTop + $elem.height();
 
     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
 }
 
+// Here I set functions for checking elements and applying the desired effect
+
 function fadeInCheckAnimation(see) {
     var $see = $(see);
-
     if (isElementInViewport($see)) {
-        // Start the animation
-        // $elem.addClass('start');
-	$see.addClass('animated fadeIn');
-
+    	$see.addClass('animated fadeIn');
     }
 }
 
 function fadeInLeftCheckAnimation(see) {
     var $see = $(see);
-
     if (isElementInViewport($see)) {
-        // Start the animation
-        // $elem.addClass('start');
 	$see.addClass('animated fadeInLeft');
-
     }
 }
 
 function fadeInRightCheckAnimation(see) {
     var $see = $(see);
-
     if (isElementInViewport($see)) {
-        // Start the animation
-        // $elem.addClass('start');
 	$see.addClass('animated fadeInRight');
-
     }
 }
 
 function fadeInUpCheckAnimation(see) {
     var $see = $(see);
-
     if (isElementInViewport($see)) {
-        // Start the animation
-        // $elem.addClass('start');
 	$see.addClass('animated fadeInUp');
-
     }
 }
+
+// Here I prevent mobile devices from running the animations to ensure mobile functionality
+
 // Check if mobile
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-// If mobile, do not run scripts.
+
+// If mobile, I do not run scripts.
+
 }else
 {
-//Now include js files
+
+// If not mobile, I run the functions on the elements
 
   // Capture scroll events
   $(window).scroll(function(){
-      fadeInCheckAnimation('#portfolio-heading');
+
       fadeInLeftCheckAnimation('.skillsLeft');
       fadeInRightCheckAnimation('.skillsRight');
-      fadeInUpCheckAnimation('.contact');
+
+      fadeInCheckAnimation('#portfolio-heading');
 
       fadeInLeftCheckAnimation('.radio-left');
       fadeInLeftCheckAnimation('.gumbo-left');
-      fadeInLeftCheckAnimation('.alex-left');
-      fadeInLeftCheckAnimation('.tribune-left');
 
       fadeInRightCheckAnimation('.radio-right');
       fadeInRightCheckAnimation('.gumbo-right');
-      fadeInRightCheckAnimation('.alex-right');
-      fadeInRightCheckAnimation('.tribune-right');
+
+      fadeInUpCheckAnimation('.contact');
 
   });
 
 }
+
+// That's all folks
 
 }); //End Document
