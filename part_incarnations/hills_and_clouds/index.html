@@ -49,13 +49,10 @@ Also be sure to check out style.css and script.js as well
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-<!-- Preloader and Intro Fallback for users without javascript -->
+<!-- Preloader Fallback for users without javascript -->
 <noscript><style>
   #preloader {
     background: none !important;
-}
-#headline, #sub-headline, #location {
-	visibility: visible !important;
 }
 </style></noscript>
 
@@ -73,12 +70,22 @@ Also be sure to check out style.css and script.js as well
 <!-- Header -->
 <header role="banner" id="header">
 	<h1 id="headline">Cory Long</h1>
-	<h2 id="sub-headline">Web Developer</h2>
-	<h3 id="location">Based out of Jacksonville</h2>
+	<h2 id="sub-headline">Web Design &amp; Development</h2>
 </header>
 
+<!-- Parallax -->
+<section class="intro">
+	<div class="parallax-wrap">
+		<div class="parallax-layer layer-1"></div>
+		<div class="parallax-layer layer-2"></div>
+	</div>
+</section>
+
+<!-- This image is shown in place of Parallax for mobile users -->
+	<img id="mobile" src="resources/images/full.png" alt="Cory Long Web Design"/>
+
 <!-- After Intro -->
-<div class="row">
+<div class="row" id="after-intro" >
 <!-- Triangle creates seam between parallax and page -->
 	<img id="triangle" src="resources/images/triangle.png" alt=""/>
 
@@ -166,7 +173,7 @@ Also be sure to check out style.css and script.js as well
 <div class="divider"></div>
 
 		<div id="skills-headbox">
-			<h3 id="skills-heading">Skills</h3>
+			<h3>Skills</h3>
 		</div>
 
 		<div id="skillsList" class="row">
@@ -244,21 +251,9 @@ Also be sure to check out style.css and script.js as well
 	</div>
 </section>
 
-<section class="employed">
-
-<div class="divider"></div>
-
-	<h3>Current Employment</h3>
-	<div class="col-md-3"></div>
-	<div class="col-md-6">
-		<p>I am currently developing a sophisticated web application to track people’s measurements, meals, and recommend routines in a social network environment.</p>
-		<p>Contact <a href="mailto:john@surrealpixel.com">john@surrealpixel.com</a> for reference.</p>
-	</div><div class="col-md-3"></div>
-</section>
-
 <!-- Contact -->
 <section class="contact">
-	<div id="contact">
+	<div class="contain" id="contact">
 
 <div class="divider"></div>
 
@@ -266,7 +261,7 @@ Also be sure to check out style.css and script.js as well
 	  <div class="col-md-6">
 
 		<h3>Contact</h3>
-		<p>I am seeking both steady and freelance work in Web Design and Development. If you think I can help, please get in touch. Thank you for reading.</p>
+		<p>I am seeking both steady and freelance work in Web Design and Development. If you think you need my help on a project, please get in touch. Thank you for reading.</p>
 
 		<a href="mailto:goosepostbox@gmail.com"><p id="email">goosepostbox@gmail.com</p></a>
 		<p id="skype">goosetube on skype</p>
@@ -319,8 +314,6 @@ Also be sure to check out style.css and script.js as well
 
 <!-- Script -->
 	<script type="text/javascript" src="resources/tools/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="resources/tools/lettering.js"></script>
-    <script type="text/javascript" src="resources/tools/jquery.textillate.js"></script>
     <script type="text/javascript" src="resources/script.js"></script>
 
 <!-- Thanks for Reading -->

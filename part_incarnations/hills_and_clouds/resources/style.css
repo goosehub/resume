@@ -35,17 +35,12 @@
     z-index: 999;
 }
 
-/*	Here I set elements as hidden until displayed */
-#headline, #sub-headline, #location {
-	visibility: hidden;
-}
-
 /*	Here I set the animation speed and delay */
-#skills-heading, .skillsLeft, .skillsRight, #portfolio-heading, .employed, .contact,
+#portfolio-heading, .skillsLeft, .skillsRight, .contact,
 .radio-left, .gumbo-left, .radio-right, .gumbo-right {
-  	-webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -o-animation-duration: 1.5s;
+  	-webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
 	-webkit-animation-delay: 0.4s;
 	-moz-animation-delay: 0.4s;
 	-o-animation-delay: 0.4s;
@@ -68,7 +63,7 @@
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(100,100,100,0.8); 
+    background: rgba(0,0,0,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(144,199,63,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -79,8 +74,10 @@
 /*	Note: */
 /*	Movile users receive a static image opposed to a parallax to ensure functionality */
 
-#triangle {
+#mobile, #triangle {
 	width: 100%;
+	position: relative;
+	z-index: 50;
 }
 /*	By default, Do not display mobile intro */
 #mobile {
@@ -88,11 +85,15 @@
 }
 @media all and (max-width: 1100px) {
 /*	Shrink headers to fit */
-	h1, h2 {
-		font-size: 3em !important;
-	}
 	h3 {
-		font-size: 2em !important;
+		font-size: 2em;
+	}
+	.parallax-wrap, #traingle {
+		display: none;
+	}
+/*	If mobile, display mobile intro */
+	#mobile {
+		display: inline;
 	}
 /*	Shrink emphasis items margin */
 	.emphasis-item {
@@ -162,16 +163,50 @@ h4 {
 
 /*	Here's the Introduction Section */
 
+.parallax-wrap {
+	background: #28baf9;
+	height: 100vh;
+	width: 100%;
+	/*position: fixed;*/
+	overflow: visible;
+}
+.parallax-layer {
+	position: fixed;
+	height: 120vh;
+	width: 100%;
+	/*left: 0;*/
+	bottom: 0;
+	background-position: no-repeat top center fixed;
+}
+.layer-1 {
+	background: url('../resources/images/background.png'); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 5;
+}
 #header {
 	padding-top: 8vh;
+	position: fixed;
 	z-index: 10;
 	width: 100%;
-	height: 100vh;
-	color: #FFF;
-	background-color: #000;
+}
+.layer-2 {
+	background: url('../resources/images/foreground.png'); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 15;
 }
 #triangle {
 	width: 100%;
+}
+#after-intro {
+	position: relative;
+	z-index: 50;
+	background: #FFF;
 }
 
 /*	Here's the Emphasis Section */
@@ -189,12 +224,16 @@ h4 {
 }
 .emphasis-peekhole {
 	padding: 0.5em 0 0.5em 0;
-	border-radius: 1em;
+	border: 1px solid #888;
+	border-radius: 1em 2em 2em 4em;
 	font-family: BebasNeue, AveriaSerif-Regular, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 	font-weight: bold;
 	text-shadow: 0.05em 0.05em 0.05em #FFF;
-	background-color: #21b8ff;
-	color: #000;
+	background: url('../resources/images/clouds.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*	Here's the Skills Section */
@@ -205,9 +244,14 @@ h4 {
 #skills-headbox {
 	padding: 0.5em;
 	margin-bottom: 0.5em;
-	color: #FFF;
-	background-color: #21b8ff;
-	border-radius: 0em;
+	background-color: #000;
+	background: url('../resources/images/blue-fade.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border: 1px solid #888;
+	border-radius: 1em 1em 9em 9em;
 }
 .skills h3 {
 	font-weight: bold;
@@ -257,12 +301,6 @@ h4 {
 	font-family: BebasNeue, AveriaSerif-Regular, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
-/*	Here is the Current Employment Section */
-
-.employed p {
-	text-align: center;
-}
-
 /*	Here is the Contact Section */
 #contact p {
 	text-align: center;
@@ -306,9 +344,9 @@ h4 {
 #credit {
 	margin-top: 2em;
 }
-#credit, #copyright {
-	text-align: center;
+#credit, #copyright, #disclaimer {
 	clear: both;
+	margin-left: 2em;
 }
 
 /*	That's it */

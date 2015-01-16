@@ -21,21 +21,28 @@
 $(document).ready(function()
 {
 
-// Here is the intro Animations
+// Here is the Parallax you saw
 
-setTimeout(function(){
-  $('#headline').textillate({ in: { effect: 'rollIn' } });
-}, 1000);
+// Note:
+// If user is mobile, I disable the Parallax attempt to ensure mobile functionality
 
-setTimeout(function(){
-  $('#sub-headline').textillate({ in: { effect: 'fadeInRightBig' } });
-}, 2500);
+// First I get the window position
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
 
-setTimeout(function(){
-  $('#location').textillate({ in: { effect: 'fadeInLeftBig' } });
-}, 4000);
+// then I set the Paralax speed
+  var foreground = 0.5;
 
-// Here is the post intro Animations you saw
+// Finally, I do the Parallax logic
+	$(".layer-2").css({
+	  "background-position":"0px -"+scrollTop/foreground+"px"     
+	});
+      $(".layer-2").css({
+         "margin-top":"-"+scrollTop+"px"
+    });
+});
+
+// Here is the Animations you saw
 
 // Here is a function to determine if element is in viewport
 function isElementInViewport(elem) {
@@ -98,8 +105,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   // Capture scroll events
   $(window).scroll(function(){
 
-      fadeInUpCheckAnimation('#skills-heading');
-
       fadeInLeftCheckAnimation('.skillsLeft');
       fadeInRightCheckAnimation('.skillsRight');
 
@@ -111,9 +116,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       fadeInRightCheckAnimation('.radio-right');
       fadeInRightCheckAnimation('.gumbo-right');
 
-      fadeInDownCheckAnimation('.employed');
-
-      fadeInUpCheckAnimation('#contact');
+      fadeInUpCheckAnimation('.contact');
 
   });
 
