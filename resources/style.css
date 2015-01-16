@@ -5,7 +5,7 @@
 /*														*/
 /*	I worked hard on it									*/
 /*														*/ 
-/*	I hope you enjoye it								*/
+/*	I hope you enjoy it									*/
 /*														*/
 /*														*/ 
 /*														*/ 
@@ -41,14 +41,14 @@
 }
 
 /*	Here I set the animation speed and delay */
-#skills-heading, .skillsLeft, .skillsRight, #portfolio-heading, .employed, .contact,
+#headline, #sub-headline, #location, #skills-heading, .skillsLeft, .skillsRight, #portfolio-heading, .employed, .contact,
 .radio-left, .gumbo-left, .radio-right, .gumbo-right {
   	-webkit-animation-duration: 1.5s;
     -moz-animation-duration: 1.5s;
     -o-animation-duration: 1.5s;
-	-webkit-animation-delay: 0.4s;
-	-moz-animation-delay: 0.4s;
-	-o-animation-delay: 0.4s;
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	-o-animation-delay: 0.6s;
 }
 
 /*	Here is the custom scrollbar you saw */
@@ -203,11 +203,12 @@ h4 {
 	clear: both;
 }
 #skills-headbox {
+	width: 100%;
 	padding: 0.5em;
 	margin-bottom: 0.5em;
-	color: #FFF;
-	background-color: #21b8ff;
-	border-radius: 0em;
+	color: #000;
+	background-color: #FFF;
+	border: 1em black solid;
 }
 .skills h3 {
 	font-weight: bold;
@@ -264,7 +265,10 @@ h4 {
 }
 
 /*	Here is the Contact Section */
-#contact p {
+.contact {
+	/*margin-left: 25%;*/
+}
+.contact p {
 	text-align: center;
 	word-spacing: 0.1em;
 }

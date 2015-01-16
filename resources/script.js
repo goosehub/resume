@@ -21,7 +21,7 @@
 $(document).ready(function()
 {
 
-// Here is the intro Animations
+// Here is the initial intro Animations
 
 setTimeout(function(){
   $('#headline').textillate({ in: { effect: 'rollIn' } });
@@ -34,6 +34,14 @@ setTimeout(function(){
 setTimeout(function(){
   $('#location').textillate({ in: { effect: 'fadeInLeftBig' } });
 }, 4000);
+
+// Here is the post Intro animations
+
+setTimeout(function(){
+  $('#headline').addClass('animated swing');
+  $('#sub-headline').addClass('animated rubberBand');
+  $('#location').addClass('animated shake');
+}, 8000);
 
 // Here is the post intro Animations you saw
 
@@ -111,9 +119,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       fadeInRightCheckAnimation('.radio-right');
       fadeInRightCheckAnimation('.gumbo-right');
 
-      fadeInDownCheckAnimation('.employed');
+      fadeInCheckAnimation('.employed');
 
-      fadeInUpCheckAnimation('#contact');
+      fadeInUpCheckAnimation('.contact');
 
   });
 
