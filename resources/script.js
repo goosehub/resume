@@ -61,33 +61,13 @@ function isElementInViewport(elem) {
     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
 }
 
-// Here I set functions for checking elements and applying the desired effect
+// Here I set functions for applying the desired effect when in viewport
 
-function fadeInCheckAnimation(see) {
+function animateCheckAndAction(see, action) {
     var $see = $(see);
+    var $action = $(action);
     if (isElementInViewport($see)) {
-    	$see.addClass('animated fadeIn');
-    }
-}
-
-function fadeInLeftCheckAnimation(see) {
-    var $see = $(see);
-    if (isElementInViewport($see)) {
-	$see.addClass('animated fadeInLeft');
-    }
-}
-
-function fadeInRightCheckAnimation(see) {
-    var $see = $(see);
-    if (isElementInViewport($see)) {
-	$see.addClass('animated fadeInRight');
-    }
-}
-
-function fadeInUpCheckAnimation(see) {
-    var $see = $(see);
-    if (isElementInViewport($see)) {
-	$see.addClass('animated fadeInUp');
+      $see.addClass('animated '+action+'');
     }
 }
 
@@ -106,22 +86,28 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   // Capture scroll events
   $(window).scroll(function(){
 
-      fadeInUpCheckAnimation('#skills-heading');
+      animateCheckAndAction('.emphasis-top', 'pulse');
+      animateCheckAndAction('.emphasis-mid', 'pulse');
+      animateCheckAndAction('.emphasis-btm', 'pulse');
 
-      fadeInLeftCheckAnimation('.skillsLeft');
-      fadeInRightCheckAnimation('.skillsRight');
+      animateCheckAndAction('.skills-heading', 'zoomIn');
 
-      fadeInCheckAnimation('#portfolio-heading');
+      animateCheckAndAction('.skillsLeft', 'fadeInLeft');
+      animateCheckAndAction('.skillsRight', 'fadeInRight');
 
-      fadeInLeftCheckAnimation('.radio-left');
-      fadeInLeftCheckAnimation('.gumbo-left');
+      animateCheckAndAction('.portfolio-heading', 'zoomIn');
 
-      fadeInRightCheckAnimation('.radio-right');
-      fadeInRightCheckAnimation('.gumbo-right');
+      animateCheckAndAction('.radio-left', 'fadeInLeft');
+      animateCheckAndAction('.gumbo-left', 'fadeInLeft');
 
-      fadeInCheckAnimation('.employed');
+      animateCheckAndAction('.radio-right', 'fadeInRight');
+      animateCheckAndAction('.gumbo-right', 'fadeInRight');
 
-      fadeInUpCheckAnimation('.contact');
+      animateCheckAndAction('.employed', 'fadeInUp');
+
+      animateCheckAndAction('.contact', 'fadeInUp');
+
+      animateCheckAndAction('.pdf', 'tada');
 
   });
 
