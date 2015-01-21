@@ -25,15 +25,15 @@ $(document).ready(function()
 
 setTimeout(function(){
   $('#headline').textillate({ in: { effect: 'rollIn' } });
-}, 1000);
+}, 1500);
 
 setTimeout(function(){
   $('#sub-headline').textillate({ in: { effect: 'fadeInRightBig' } });
-}, 2500);
+}, 3000);
 
 setTimeout(function(){
   $('#location').textillate({ in: { effect: 'fadeInLeftBig' } });
-}, 4000);
+}, 4500);
 
 // Here is the post Intro animations
 
@@ -67,51 +67,38 @@ function animateCheckAndAction(see, action) {
     var $see = $(see);
     var $action = $(action);
     if (isElementInViewport($see)) {
+      $see.css({ 'visibility': 'visible' });
       $see.addClass('animated '+action+'');
     }
 }
 
-// Here I prevent mobile devices from running the animations to ensure mobile functionality
+// Capture scroll events and run animate.css animations
+$(window).scroll(function(){
 
-// Check if mobile
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    animateCheckAndAction('.emphasis-top', 'pulse');
+    animateCheckAndAction('.emphasis-mid', 'pulse');
+    animateCheckAndAction('.emphasis-btm', 'pulse');
 
-// If mobile, I do not run scripts.
+    animateCheckAndAction('.skills-heading', 'zoomIn');
 
-}else
-{
+    animateCheckAndAction('.skillsLeft', 'fadeInLeft');
+    animateCheckAndAction('.skillsRight', 'fadeInRight');
 
-// If not mobile, I run the functions on the elements
+    animateCheckAndAction('.portfolio-heading', 'zoomIn');
 
-  // Capture scroll events
-  $(window).scroll(function(){
+    animateCheckAndAction('.radio-left', 'fadeInLeft');
+    animateCheckAndAction('.gumbo-left', 'fadeInLeft');
 
-      animateCheckAndAction('.emphasis-top', 'pulse');
-      animateCheckAndAction('.emphasis-mid', 'pulse');
-      animateCheckAndAction('.emphasis-btm', 'pulse');
+    animateCheckAndAction('.radio-right', 'fadeInRight');
+    animateCheckAndAction('.gumbo-right', 'fadeInRight');
 
-      animateCheckAndAction('.skills-heading', 'zoomIn');
+    animateCheckAndAction('.employed', 'fadeIn');
 
-      animateCheckAndAction('.skillsLeft', 'fadeInLeft');
-      animateCheckAndAction('.skillsRight', 'fadeInRight');
+    animateCheckAndAction('.contact', 'fadeInUp');
 
-      animateCheckAndAction('.portfolio-heading', 'zoomIn');
+    animateCheckAndAction('.pdf', 'tada');
 
-      animateCheckAndAction('.radio-left', 'fadeInLeft');
-      animateCheckAndAction('.gumbo-left', 'fadeInLeft');
-
-      animateCheckAndAction('.radio-right', 'fadeInRight');
-      animateCheckAndAction('.gumbo-right', 'fadeInRight');
-
-      animateCheckAndAction('.employed', 'fadeInUp');
-
-      animateCheckAndAction('.contact', 'fadeInUp');
-
-      animateCheckAndAction('.pdf', 'tada');
-
-  });
-
-}
+});
 
 // That's all folks
 
