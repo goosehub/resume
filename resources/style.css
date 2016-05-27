@@ -42,7 +42,7 @@
 
 /*	Here I set the animation speed and delay */
 /*	visibility is hidden so elements don't flash before the animation begins */
-#headline, #sub-headline, #location, .skills-heading, .skillsLeft, .skillsRight, .portfolio-heading, .employed, .contact,
+#headline, #sub-headline, #location, .skills-heading, .skillsRow, .portfolio-heading, .employed, .contact,
 .radio-left, .gumbo-left, .radio-right, .gumbo-right, .pdf, .emphasis-peekhole {
 	visibility: hidden;
   	-webkit-animation-duration: 1.5s;
@@ -51,6 +51,15 @@
 	-webkit-animation-delay: 0.6s;
 	-moz-animation-delay: 0.6s;
 	-o-animation-delay: 0.6s;
+}
+
+/* Here is the down hint */
+#down-hint {    
+	display: none;
+    position: fixed;
+    top: 80vh;
+    margin-left: 46vw;
+    font-size: 5em;
 }
 
 /*	Here is the custom scrollbar you saw */
@@ -213,6 +222,14 @@ h4 {
 	background-color: #FFF;
 	border: 1em black solid;
 }
+.skillsRight {
+	text-align: right;
+}
+@media all and (max-width: 800px) {
+	.skillsRow {
+		text-align: center;
+	}
+}
 .skills h3 {
 	font-weight: bold;
 	text-shadow: 0.01em 0.01em 0.01em #FFFFFF;
@@ -220,10 +237,6 @@ h4 {
 .skill-item {
 	display: block;
 	margin: 1em;
-}
-.skill-img {
-	height: 2em;
-	width: 2em;
 }
 .skill-name {
 	display: inline;
@@ -302,18 +315,12 @@ h4 {
 	font-weight: bold;
 }
 
-/*	Including the PDF Resume */
-
-.pdf {
-	text-align: center;
-	font-size: 2em;
-}
-
 /*	And Last but not least, here is the Credits Section */
 #credit {
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
-#credit, #copyright {
+#credit {
 	text-align: center;
 	clear: both;
 }
