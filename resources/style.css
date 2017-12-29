@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "AveriaSerif-Regular";
+  src: url(fonts/AveriaSerif-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "CheesePizza";
+	src: url(fonts/CheesePizza.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url(fonts/BebasNeue.otf) format("opentype");
+} 
+body {
+	font-family: AveriaSerif-Regular, Palatino, sans-serif;
+	text-shadow: 0.05em 0.05em 0.05em #FFF;
+	font-size: 1.5em;
+}
+h1, h2, h3, h4 {
+	text-align: center;
+}
+h1 {
+	font-family: CheesePizza, Palatino, serif;
+	font-size: 5em;
+}
+h2 {
+	font-family: CheesePizza, Palatino, serif;
+	font-size: 4em;
+}
+h3 {
+	font-family: BebasNeue, Palatino, serif;
+	font-size: 3em;
+}
+h4 {
+	font-family: BebasNeue, Palatino, serif;
+	font-size: 2em;
+}
+a {
+	font-family: BebasNeue, Palatino, serif;
+	color: #4444FF;
+	letter-spacing: 0.1em;
+	word-spacing: 0.1em;
+	transition:1s;
+}
+a:hover {
+	color: #000;
+}
+img {
+	border: 1px solid #ccc;
+}
+section {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+header {
+	background-color: #000;
+	color: #fff;
+	padding-bottom: 2em;
+}
+.header-box {
+	margin-bottom: 2em;
+}
+#do p {
+	text-align: center;
+	margin: 0.5em;
+	font-size: 1.2em;
+}
+#know .header-box {
+	width: 100%;
+	padding: 0.5em;
+	border: 1em #222 solid;
+}
+#know li {
+	list-style-type: square;
+	margin: 0.5em;
+}
+#built .header-box {
+	margin-top: 1em;
+	background-color: #000;
+	color: #FFF;
+	padding: 0.5em;
+	text-shadow: 0.01em 0.01em 0.01em #0000FF;
+}
+.built-item {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+#holmes .header-box {
+	color: #70a62b;
+	text-shadow: 0.01em 0.01em 0.01em #10294c;
+}
+#map {
+	height: 300px;
+	width: 100%;
+}
+#email, #phone {
+	text-align: center;
+	font-size: 1.8em;
+	font-family: BebasNeue, Palatino, serif;
+}
+.input {
+	opacity: 0.8;
+}
+.submit {
+	font-family: BebasNeue, AveriaSerif-Regular, â€˜Palatino Linotypeâ€™, â€˜Book Antiquaâ€™, Palatino, serif;
+	font-size: 1.2em;
+	letter-spacing: 0.4em;
+	background-color: #8dc73f;
+	transition:1s;
+}
+.submit:hover {
+	background-color: #00aef0;
+	font-weight: bold;
+}
+footer {
+	margin-bottom: 2em;
+}
