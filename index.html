@@ -33,7 +33,7 @@
 
 				<header role="banner">
 					<h1 id="headline">Cory Long</h1>
-					<h2 id="sub-headline">Software Developer</h2>
+					<h2 id="sub-headline">Software <span class="typed"></span></h2>
 				</header>
 
 				<section id="do">
@@ -247,12 +247,12 @@
 						<div class="col-md-8 col-md-push-2">
 							<h3>What Is My Contact?</h3>
 
-							<p class="lead">I am interested in hearing any and all opportunities.</p>
-
 							<a href="mailto:goosepostbox@gmail.com">
-								<p id="email">goosepostbox@gmail.com</p>
+								<p id="email" class="text-center">goosepostbox@gmail.com</p>
 							</a>
-							<p id="phone">904-673-8990</p>
+							<p id="phone" class="text-center">904-673-8990</p>
+
+							<p class="lead text-center">Or use this contact form below:</p>
 
 							<form name="contactform" method="post" action="resources/contact-form.php">
 								<input type="hidden" name="bee_movie" value="">
@@ -287,12 +287,17 @@
 		</div>
 	</div>
 
+	<!-- jQuery, dependency for Typed.js -->
+	<script type="text/javascript" src="resources/tools/jquery-3.2.1.min.js"></script>
 
-	<!-- Google Maps Script -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lT8RkN6KffGEfJ3xBcBgn2VZga-a05I&callback=initMap"></script>
+	<!-- Typed.js gives this page a nice touch -->
+	<script type="text/javascript" src="resources/tools/typed.min.js"></script>
 
-	<!-- Script, just contains initMap function for google maps -->
+	<!-- My script, just google maps initMap() and typed.js init -->
 	<script type="text/javascript" src="resources/script.js"></script>
+
+	<!-- Google Maps -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lT8RkN6KffGEfJ3xBcBgn2VZga-a05I&callback=initMap"></script>
 
 </body>
 </html>
