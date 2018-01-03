@@ -98,6 +98,7 @@ header {
 }
 .input {
 	opacity: 0.8;
+	border-width: 2px;
 }
 .submit {
 	font-family: BebasNeue, AveriaSerif-Regular, â€˜Palatino Linotypeâ€™, â€˜Book Antiquaâ€™, Palatino, serif;
