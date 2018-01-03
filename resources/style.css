@@ -115,3 +115,9 @@ footer {
 	margin-bottom: 2em;
 	text-align: center;
 }
+/* Typed text alters layout while animating, so force on it's own line to prevent layout changes */
+@media only screen and (max-device-width: 600px) {
+	.software_text {
+		display: block;
+	}
+}
