@@ -5,10 +5,10 @@ function initMap() {
         mapTypeId: 'terrain'
     });
     var squareCoords = [
-        {lat: 30, lng: -81},
-        {lat: 31, lng: -81},
-        {lat: 31, lng: -82},
-        {lat: 30, lng: -82}
+        {lat: 29, lng: -82},
+        {lat: 30, lng: -82},
+        {lat: 30, lng: -83},
+        {lat: 29, lng: -83}
     ];
     var workArea = new google.maps.Polygon({
         paths: squareCoords,
