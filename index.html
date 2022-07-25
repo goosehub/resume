@@ -16,11 +16,11 @@
 	<meta name="author" content="Cory Long">
 	<meta name="robots" content="all">
 
-	<!-- Gotta love bootstrap -->
+	<!-- I now use Bulma but Bootstrap is also good -->
 	<link rel="stylesheet" href="resources/tools/bootstrap.min.css" />
 
 	<!-- Simple style file -->
-	<link rel="stylesheet" href="resources/style.css?v1.1" />
+	<link rel="stylesheet" href="resources/style.css?v1.2" />
 
 	<!-- Favicon made by yours truly -->
 	<link rel="shortcut icon" href="resources/favicon.ico">
@@ -29,7 +29,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-push-2">
+			<div class="col-md-10 col-md-push-1">
 
 				<header role="banner">
 					<h1 id="headline">Cory Long</h1>
@@ -45,12 +45,8 @@
 					</div>
 					<p>Work at MeTEOR Education creating software</p>
 					<p>Create fun projects in my spare time</p>
-					<p>Write quality code</p>
-					<p>Keep my functions small, focused, and easy to understand</p>
-					<p>Leave comments as I create and maintain code</p>
-					<p>Make tests for the code I write</p>
-					<p>Document every feature</p>
-					<p>Keep track of every bug</p>
+					<p>Write quality code that is easy to read and extend</p>
+					<p>Create and maintain documentation of everything I make</p>
 					<p>Strictly follow security best practices</p>
 					<p>Never stop learning</p>
 				</section>
@@ -64,10 +60,9 @@
 					<ul>
 						<li>Javascript, PHP, C#, Python and several other programming languages</li>
 						<li>How to design user friendly UX with VueJS, SASS, HTML5 Canvas, and other front end technologies</li>
+						<li>How to use Docker, configure Apache, manage NPM packages, exit VIM, and other Sys Admin tasks</li>
 						<li>How to write efficient queries in both MySQL and MSSQL</li>
-						<li>How to use a feature/dev/master branch workflow in Git</li>
-						<li>How to configure Apache, setup CRONs, manage packages, exit VIM, and other Linux Sys Admin tasks</li>
-						<li>How to query and interpret data to make meaningful insights</li>
+						<li>How to interpret data to make meaningful insights</li>
 						<li>How to ask a great question on <a target="_blank" href="https://stackoverflow.com/users/3774582/goose?tab=profile">Stack Overflow</a></li>
 					</ul>
 				</section>
@@ -81,8 +76,25 @@
 
 					<div class="built-item row">
 						<div class="col-md-7">
+							<a target="_blank" href="https://tpm.meteorconnect.com/">
+								<img class="img-responsive img-rounded" alt="MeTEOR Connect" src="resources/images/portfolio-meteor.png"/>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<h4>MeTEOR Connect</h4>
+							<p>MeTEOR Connect allows MeTEOR Education customers to order products and manage quotes. It is one of several web based platforms I've built with the team at MeTEOR Education.</p>
+							<p>
+								<a target="_blank" href="https://tpm.meteorconnect.com/">View the site yourself</a>
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="built-item row">
+						<div class="col-md-7">
 							<h4>Product Customization Engine</h4>
-							<p>This Product Customization Engine was built using HTML5 Canvas and Fabric.JS. It includes a wide range of features including curved text, monochroming images, shapes, a large font selection, bulk ordering, and much more.</p>
+							<p>This Product Customization Engine was built in my time at HC Brands using HTML5 Canvas and Fabric.JS. It includes a wide range of features including curved text, monochroming images, shapes, a large font selection, bulk ordering, and more.</p>
 							<p>
 								<a target="_blank" href="https://www.customsigns.com/design/color-sign-horizontal-3-x-6">View the site yourself</a>
 							</p>
@@ -95,35 +107,17 @@
 					</div>
 
 					<hr>
-
-					<div class="built-item row" style="display: none;">
-						<div class="col-md-7">
-							<a target="_blank" href="https://www.simplystamps.com/">
-								<img class="img-responsive img-rounded" alt="SimplyStamps" src="resources/images/portfolio-simplystamps.png"/>
-							</a>
-						</div>
-						<div class="col-md-5">
-							<h4>SimplyStamps</h4>
-							<p>SimplyStamps is one of several E-commerce websites have I built along with the team at Holmes Custom. It uses the Magento platform and has been extended to include several features for staff and customers.</p>
-							<p>
-								<a target="_blank" href="https://www.simplystamps.com/">View the site yourself</a>
-							</p>
-						</div>
-					</div>
-
-					<!-- <hr> -->
-
 					<div class="built-item row">
 						<div class="col-md-7">
-							<a target="_blank" href="https://tpm.meteorconnect.com/">
-								<img class="img-responsive img-rounded" alt="MeTEOR Connect" src="resources/images/portfolio-meteor.png"/>
+							<a target="_blank" href="https://merchantofthesixkingdoms.com/">
+								<img class="img-responsive img-rounded" alt="Jaywalker" src="resources/images/portfolio-merchant.png"/>
 							</a>
 						</div>
 						<div class="col-md-5">
-							<h4>MeTEOR Connect</h4>
-							<p>MeTEOR Connect allows MeTEOR Education customers to order products and manage quotes. It is one of several web based platforms I've built with the team at MeTEOR Education.</p>
+							<h4>Merchant of the Six Kingdoms</h4>
+							<p>Merchant of the Six Kingdoms is a game created in VueJS where players are traveling merchants. It includes 20 marketplaces, 200 characters, and over 1,800 items. It releases on Steam in Summer of 2023.</p>
 							<p>
-								<a target="_blank" href="https://tpm.meteorconnect.com/">View the site yourself</a>
+								<a target="_blank" href="https://merchantofthesixkingdoms.com/">See the promotional website</a>
 							</p>
 						</div>
 					</div>
@@ -179,40 +173,6 @@
 						</div>
 					</div>
 
-					<hr>
-
-					<div class="built-item row" style="display: none;">
-						<div class="col-md-7">
-							<h4>Embedica</h4>
-							<p>Embedica is a JavaScript library I built that converts links into embed HTML for several sites including Youtube, Vimeo, Twitch, Soundcloud, Vocaroo, Videos, and Images, and turning other links into hyperlinks. It makes heavy use of regular expressions to parse input.</p>
-							<p>
-								<a target="_blank" href="https://github.com/goosehub/embedica">View the site yourself</a>
-							</p>
-						</div>
-						<div class="col-md-5">
-							<a target="_blank" href="https://github.com/goosehub/embedica">
-								<img class="img-responsive img-rounded" alt="Embedica" src="resources/images/portfolio-embedica.png"/>
-							</a>
-						</div>
-					</div>
-
-					<!-- <hr> -->
-
-					<div class="built-item row">
-						<div class="col-md-7">
-							<a target="_blank" href="https://store.steampowered.com/app/937320/Jay_Walker/">
-								<img class="img-responsive img-rounded" alt="Jaywalker" src="resources/images/portfolio-jaywalker.jpg"/>
-							</a>
-						</div>
-						<div class="col-md-5">
-							<h4>Jaywalker</h4>
-							<p>Jaywalker is my first 3D game built with Unity, and involves players crossing increasingly busy roads and highways in a first person point of view.</p>
-							<p>
-								<a target="_blank" href="https://store.steampowered.com/app/937320/Jay_Walker/">See the game on Steam</a>
-							</p>
-						</div>
-					</div>
-
 				</section>
 
 				<hr>
@@ -263,8 +223,6 @@
 					</div>
 				</section>
 
-				<!-- <hr> -->
-
 				<section id="where">
 					<div class="row">
 						<div class="col-md-8 col-md-push-2">
@@ -284,7 +242,6 @@
 							<a href="mailto:goosepostbox@gmail.com">
 								<p id="email" class="text-center">goosepostbox@gmail.com</p>
 							</a>
-							<!-- <p id="phone" class="text-center">904-673-8990</p> -->
 
 							<p class="lead text-center">Or use this contact form below:</p>
 
@@ -303,7 +260,6 @@
 							</form>
 						</div>
 					</div>
-
 				</section>
 
 				<hr>
